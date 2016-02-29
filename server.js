@@ -23,6 +23,6 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use('/', route);
 
-app.listen(3000, () => {
-  console.log("port 3000");
+app.listen(3000, 'localhost', function() {
+  console.log("Listening on port " + this.address().port);
 });
