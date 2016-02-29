@@ -14,7 +14,7 @@ router.get('*', (req, res) => {
     <App peopleList={initialState.peopleList}/>
   );
 
-  //Using handlebars to inject the rendered component(s) and state onto the DOM. A template engine isn't required.
+  //Using handlebars to inject the rendered component(s) and state into the HTML. A template engine isn't required.
   res.render('index', {ServerSideRender: Content , state: JSON.stringify(initialState)});
 });
 
