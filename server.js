@@ -11,6 +11,7 @@ var config = require('./webpack.config');
 var route = require('./src/server/run');
 var app = express();
 
+//Webpack is not needed for Server Side Rendering, it does work wonders for packaging client code.
 var compiler = webpack(config);
 
 app.set('view engine', 'hbs');
