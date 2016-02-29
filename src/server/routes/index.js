@@ -1,7 +1,7 @@
 import express from 'express';
 import React from 'react';
 import ReactServer from 'react-dom/server';
-import App from '../client/components/App';
+import App from '../../client/components/App';
 import fs from 'fs';
 
 let router = express.Router();
