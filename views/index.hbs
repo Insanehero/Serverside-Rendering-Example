@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Server Side Rendering</title>
+  </head>
+  <body>
+    <div id='root'>{{{ServerSideRender}}}</div>
+    <script>
+      window.INITIAL_STATE = {{{state}}}
+    </script>
+    <!-- Load Webpack bundle of client side code -->
+    <script src='/static/bundle.js'></script>
+  </body>
+</html>
