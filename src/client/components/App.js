@@ -14,7 +14,7 @@ class App extends React.Component {
     //   this.state.renderMsg = "Uh oh! The client and server initial renders didn't match up!";
     // }
   }
-  componentWillMount() { //This lifecycle method does initialize on renderToString() method and on the client side.
+  componentWillMount() { //This lifecycle method does initialize on the reactDOM server method renderToString() and on the client side.
     console.log("Will I ever mount?");
   }
   componentDidMount() {
