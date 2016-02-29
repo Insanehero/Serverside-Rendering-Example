@@ -10,7 +10,7 @@ let router = express.Router();
 router.get('*', (req, res) => {
   let initialState = {}; //Set the initial state of the app
   initialState.peopleList = JSON.parse(fs.readFileSync('People.json', {encoding: 'utf8'}));
-  let Content = ReactServer.renderToString( // Generates a string of the rendered react component(s)
+  let Content = ReactServer.renderToString( // Generates a HTML string with the rendered react component(s)
     <App peopleList={initialState.peopleList}/>
   );
 
