@@ -8,7 +8,7 @@ var path = require('path');
 var express = require('express');
 var webpack = require('webpack');
 var config = require('./webpack.config');
-var route = require('./src/server/run');
+var route = require('./src/server/routes/index');
 var app = express();
 
 //Webpack is not needed for Server Side Rendering, it does work wonders for packaging client code.
